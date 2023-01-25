@@ -63,8 +63,8 @@ const getVideoLink = async (url, q) => {
     // audio.pipe(ffmpegProcess.stdio[4]);
     // ffmpegProcess.stdio[1].pipe(fs.createWriteStream("newVideo.mp4"));
 
-    video.pipe(fs.createWriteStream("video1.mp4"));
-    audio.pipe(fs.createWriteStream("audio1.mp3"));
+    video.pipe(fs.createWriteStream("/tmp/video1.mp4"));
+    audio.pipe(fs.createWriteStream("/tmp/audio1.mp3"));
     await promiseSetTimeOut(5000);
     await merge("/tmp/video1.mp4", "/tmp/audio1.mp3");
   } catch (err) {
