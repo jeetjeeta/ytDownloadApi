@@ -1,8 +1,8 @@
 // const ffmpeg = require("ffmpeg-static");
 
-const ffmpeginstaller = require("@ffmpeg-installer/ffmpeg");
+// const ffmpeginstaller = require("@ffmpeg-installer/ffmpeg");
 const ffmpeg = require("fluent-ffmpeg");
-ffmpeg.setFfmpegPath(ffmpeginstaller.path);
+// ffmpeg.setFfmpegPath(ffmpeginstaller.path);
 // const ffmpeg = require("fluent-ffmpeg");
 const cp = require("child_process");
 const fs = require("fs");
